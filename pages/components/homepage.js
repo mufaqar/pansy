@@ -12,7 +12,7 @@ export default function Homepage() {
                   <div class="menu-wrapper">
                     <div class="menu-logo logo hi-res">
                       <a href="#">
-                        <img src="images/hi-res-logo.png" alt="" />
+                        <img src="/images/hi-res-logo.png" alt="" />
                       </a>
                     </div>
                     <div class="navigation-wrapper right">
@@ -341,7 +341,7 @@ export default function Homepage() {
                 </div>
               </div>
               <div class="image-holder">
-                <img src="images/home/services-1-01.jpg" alt="" />
+                <img src="/images/home/services-1-01.jpg" alt="" />
               </div>
             </div>
           </div>

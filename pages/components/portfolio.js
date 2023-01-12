@@ -34,7 +34,7 @@ export default function Portfolio() {
         <div class="mix-container portfolio-container full pt-20 wow fadeInUp">
           <div class="mix branding">
             <div class="portfolio-holder">
-              <img src="images/home/portfolio/01/1.jpg" alt="" />
+              <img src="/images/home/portfolio/01/1.jpg" alt="" />
               <div class="port-top">
                 <div class="port-container">
                   <div class="top-hover">
