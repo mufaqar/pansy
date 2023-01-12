@@ -1,0 +1,458 @@
+@media screen and (max-width: 1199px) {
+    .calla-services-03 .content-holder,
+    .calla-contact-01 .content-holder {
+        display: block;
+        width: 100%;
+    }
+    .top {
+        padding-top: 30px;
+    }
+    .services-01 .image-holder,
+    .services-03 .image-holder {
+        display: block;
+        padding-top: 50px;
+        max-width: 767px;
+        text-align: center;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .calla-services-03 .image-holder {
+        display: block;
+        padding: 250px 0;
+    }
+    .calla-contact-01 {
+        padding-top: 30px;
+    }
+    .map .image-holder {
+        display: block;
+    }
+    #map {
+        padding: 250px 0;
+    }
+    .calla-postion-map {
+        position: relative;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .one-page-nav .menu-btn,
+    .mobile-icon {
+        display: block;
+    }
+    #main-nav,
+    .collapse {
+        display: none;
+    }
+    .onepager .main-navigation li {
+        display: block;
+    }
+    .light-version-nav .demo {
+        border: none;
+    }
+    .onepager .nav {
+        float: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        margin-top: 10px;
+        text-align: left;
+    }
+    .onepager nav ul {
+        background: #202121;
+        margin: 0 15px;
+    }
+    .onepager nav li a {
+        color: #fff;
+        color: rgba(243, 243, 243, 0.75);
+        border-bottom: 1px solid rgba(251, 251, 251, .25);
+    }
+    .onepager nav li a:hover,
+    .onepager .link-active {
+        color: #fff;
+    }
+    .onepager nav li a:hover {
+        opacity: 9;
+        background: #000;
+        background: rgba(0, 0, 0, 0.85);
+    }
+    .dark-version-nav .demo,
+    .light-version-nav .demo {
+        border: none;
+    }
+    .sm-pb-20 {
+        padding-bottom: 20px;
+    }
+    .sm-pb-30 {
+        padding-bottom: 30px;
+    }
+    .sm-pb-50 {
+        padding-bottom: 50px;
+    }
+    .md-pt-50 {
+        clear: both;
+        padding-top: 50px;
+    }
+    .md-pt-50:before {
+        content: '';
+        display: block;
+        border-top: 1px solid;
+        margin: 0 15px;
+        padding-bottom: 50px;
+    }
+    .about-01 .content-holder {
+        display: block;
+        width: 100%;
+    }
+    .about-01 .content-holder:first-child,
+    .calla-services-04 .content-holder:first-child {
+        padding-top: 0;
+    }
+    .about-01 .image-holder,
+    .calla-services-04 .image-holder {
+        display: block;
+        padding: 250px 0;
+    }
+    .about-01:nth-child(even),
+    .calla-services-04:nth-child(even) {
+        padding-top: 0;
+    }
+    .our-mission .content-holder {
+        width: 50%;
+    }
+    .team-dark .pb-50 {
+        padding-bottom: 30px;
+    }
+    .service-intro .cell:first-child {
+        width: 100%;
+    }
+    .service-intro .ca:before {
+        font-size: 60px;
+    }
+    .product-small-wrapper {
+        overflow: inherit;
+    }
+    .wrapper .hide-it {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper .desktop,
+    .tparrows {
+        display: none;
+    }
+    .xs-pb-30 {
+        padding-bottom: 30px;
+    }
+    .xs-pb-20 {
+        padding-bottom: 20px;
+    }
+    .test-it {
+        padding-bottom: 30px;
+    }
+    .pt-160 {
+        padding-top: 80px;
+    }
+    .pb-160 {
+        padding-bottom: 80px;
+    }
+    .pt-150 {
+        padding-top: 50px;
+    }
+    .pb-150 {
+        padding-bottom: 50px;
+    }
+    .pt-80 {
+        padding-top: 50px;
+    }
+    .mt-80 {
+        margin-top: 50px;
+    }
+    .mb-80 {
+        margin-bottom: 50px;
+    }
+    .pb-80 {
+        padding-bottom: 50px;
+    }
+    .pt-50 {
+        padding-top: 30px;
+    }
+    .pb-50 {
+        padding-bottom: 30px;
+    }
+    .pt-40 {
+        padding-top: 30px;
+    }
+    .top {
+        padding-top: 0;
+    }
+    .mix-container .mix {
+        width: 100%;
+        margin: 0;
+    }
+    .caption-title {
+        font-size: 22px;
+        line-height: 32px;
+        padding-bottom: 10px;
+    }
+    .intro-caption {
+        font-size: 42px;
+        letter-spacing: 10px;
+        padding-bottom: 10px;
+        line-height: 50px;
+    }
+    .portfolio-02 .content-holder {
+        display: block;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .portfolio-02 .image-holder {
+        display: block;
+    }
+    .price-guide [class*="col"]:nth-child(2) .price-border {
+        margin: 30px 0;
+    }
+    .light-header,
+    .dark-header {
+        padding: 100px 0;
+    }
+    .sub-caption-title {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    .about-intro {
+        font-size: 17px;
+    }
+    .member {
+        max-width: 400px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .number-block {
+        font-size: 38px;
+    }
+    .testimonial-blurb {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .our-mission .content-holder {
+        display: block;
+        width: 100%;
+    }
+    .our-mission .image-holder {
+        display: block;
+        width: 100%;
+        padding: 120px 0;
+    }
+    .our-mission .image-holder:first-child {
+        display: none;
+    }
+    .calla-services-01 .hvr-float {
+        padding: 30px 15px 0;
+    }
+    .about-01 .image-holder,
+    .calla-services-03 .image-holder,
+    .calla-services-04 .image-holder {
+        padding: 150px 0;
+    }
+    #map,
+    .calla-map #map {
+        padding: 150px 0;
+    }
+    .map {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .calla-contact-01 {
+        padding-top: 0;
+    }
+    .blog-wrapper {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    .blog-wrapper:last-child {
+        border-bottom: none;
+        padding-bottom: 0
+    }
+    .service-intro .cell {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .blog-data-wrapper [class*="col"]:first-child .cell {
+        padding-top: 0;
+    }
+    .calla-read-more,
+    .widget-wrapper {
+        padding-bottom: 30px;
+    }
+    .blog-data-wrapper .blog-info {
+        padding: 6px;
+    }
+    .blog-3-column .blog-data-wrapper .cell {
+        padding-top: 0;
+    }
+    .blog-comment {
+        padding-bottom: 30px;
+    }
+    .blog-reply {
+        padding: 0 0 30px 30px;
+    }
+    .product-image,
+    .shop-title {
+        max-width: 400px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .shop-single .product-image {
+        max-width: inherit;
+    }
+    .showing-results {
+        display: block;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .sorting {
+        text-align: center;
+    }
+    .review-wrapper {
+        padding-top: 10px;
+    }
+    .calla-services-03 .content-holder,
+    .calla-contact-01 .content-holder {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .shopping-cart .widget-cart-thumb {
+        display: none;
+    }
+    .table-bordered>tbody>tr>td,
+    .table-bordered>tbody>tr>th,
+    .table-bordered>tfoot>tr>td,
+    .table-bordered>tfoot>tr>th,
+    .table-bordered>thead>tr>td,
+    .table-bordered>thead>tr>th {
+        padding: 4px;
+    }
+    .product-detail {
+        padding: 0;
+    }
+    .update button {
+        font-size: 14px;
+        float: none;
+        width: 100%;
+        font-weight: 700;
+    }
+    .product-remove {
+        padding: 6px 0 0 0;
+        text-align: center;
+        display: block;
+    }
+    .product-subtotal .pricing {
+        display: block;
+        padding: 4px 0;
+    }
+    .coupon-field {
+        display: block;
+        vertical-align: middle;
+        padding-bottom: 10px;
+    }
+    .coupon-click {
+        display: block;
+        vertical-align: middle;
+        padding: 0 0 10px;
+    }
+    .calla-coupon a {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .pt-160 {
+        padding-top: 30px;
+    }
+    .pb-160 {
+        padding-bottom: 30px;
+    }
+    .filter-navigation li div {
+        padding: 6px;
+    }
+    .services-01 .content-holder .cell:last-child,
+    .services-03 .content-holder .cell:last-child {
+        border: none;
+    }
+    .services-01 .content-holder .cell:first-child,
+    .services-03 .content-holder .cell:first-child {
+        border: none;
+        padding-top: 0;
+    }
+    .cell-wrapper:first-child {
+        border: none;
+        padding-bottom: 0;
+    }
+    .cell {
+        display: block;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+    }
+    .services-01 .image-holder,
+    .services-03 .image-holder {
+        padding-top: 30px;
+    }
+    .author-image {
+        display: block;
+    }
+    .blog-reply {
+        padding: 0 0 30px 20px;
+    }
+    .product-info-navigation li {
+        display: block;
+    }
+    .product-info-navigation .active {
+        background: #202121;
+    }
+    .product-info-navigation .active div {
+        color: #fff;
+    }
+    .time_circles > div {
+        padding: 20px 20px 0;
+    }
+    .ex-caption {
+        font-size: 120px;
+    }
+    .ex-sub-caption {
+        margin-top: 10px;
+    }
+    .site-name {
+        font-size: 80px;
+    }
+    .under {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .box-caption {
+        font-size: 22px;
+        font-weight: 400;
+        padding-bottom: 10px;
+        line-height: 34px;
+    }
+    .back-to-top {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin: 0 auto;
+        padding-top: 30px;
+        max-width: 35px;
+    }
+}

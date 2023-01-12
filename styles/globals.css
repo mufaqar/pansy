@@ -1,16 +1,16 @@
-html,
+@import url('css/swiper.css');
+
+@import url('css/layers.css');
+@import url('css/navigation.css');
+
+@import url('css/animate.css');
+@import url('css/jquery.selectbox.css');
+@import url('css/jquery.mmenu.all.css');
+@import url('css/calla-icon-set.css');
+
+@import url('css/calla.css');
+@import url('css/media.css');
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  background-color: red;
 }

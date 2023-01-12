@@ -1,0 +1,136 @@
+.sbSelector,
+.sbToggle,
+.sbOptions a {
+    font-size: 14px;
+    color: #6d6e6e;
+}
+
+.sbOptions a.sbFocus {
+    color: #fff;
+    background-color: #202121;
+}
+
+.selectbox a {
+    padding: 0;
+    color: #000;
+}
+
+.sbHolder {
+    font-weight: 400;
+    padding: 0 12px;
+    height: 34px;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: top;
+    display: inline-block;
+    background: #fff;
+    z-index: 9;
+    border: 1px solid #c2c2c2;
+}
+
+.sbHolder:focus .sbSelector {}
+
+.sbSelector {
+    display: block;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    z-index: 9;
+    width: 100%;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sbSelector:link,
+.sbSelector:visited,
+.sbSelector:hover {
+    outline: none;
+    text-decoration: none;
+    color: #6d6e6e;
+}
+
+.sbToggle:before {
+    content: "\f103";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    position: absolute;
+    color: #202121;
+    font-size: 16px;
+    right: 12px;
+    top: 8px;
+}
+
+.sbToggle:hover {}
+
+.sbToggleOpen {}
+
+.sbToggleOpen:hover {}
+
+.sbHolderDisabled {
+    background-color: #202121;
+    color: #fff;
+}
+
+.sbHolderDisabled .sbHolder {}
+
+.sbHolderDisabled .sbToggle {}
+
+.sbOptions {
+    background-color: transparent;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 33px !important;
+    width: 100%;
+    left: 0;
+    overflow-y: auto;
+    background: #fff;
+    z-index: 9;
+}
+
+.sbOptions li {
+    padding: 0;
+}
+
+.sbOptions a {
+    border-bottom: 1px solid #c2c2c2;
+    display: block;
+    outline: none;
+    padding: 10px 12px 10px 12px;
+    text-align: left;
+    border-right: 1px solid #c2c2c2;
+    border-left: 1px solid #c2c2c2;
+}
+
+.sbOptions a:link,
+.sbOptions a:visited {
+    text-decoration: none;
+}
+
+
+/*.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions li.last a {}
+.sbOptions .sbDisabled {
+    border-bottom:dotted 1px #b2b2b2;
+    color:#999;
+    display:block;
+    padding:7px 0 7px 3px;
+    }
+.sbOptions .sbGroup {
+    border-bottom:dotted 1px #b2b2b2;
+    color:#b2b2b2;
+    display:block;
+    font-weight:bold;
+    padding:7px 0 7px 3px;
+    }
+.sbOptions .sbSub {
+    padding-left:17px;
+    }*/
