@@ -1,12 +1,3 @@
-@import url('css/swiper.css');
-
-@import url('css/layers.css');
-@import url('css/navigation.css');
-
-@import url('css/animate.css');
-@import url('css/jquery.selectbox.css');
-@import url('css/jquery.mmenu.all.css');
-@import url('css/calla-icon-set.css');
-
-@import url('css/calla.css');
-@import url('css/media.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
