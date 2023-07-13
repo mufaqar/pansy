@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { NavLinks } from '../const/navlinks';
+//import { NavLinks } from '../const/navlinks';
 import { AiOutlineMenu } from 'react-icons/ai'
 
 export default function Header() {
@@ -34,3 +34,31 @@ export default function Header() {
     </header>
   );
 }
+
+export const NavLinks = [
+  {
+      name: "Home",
+      link: "/",
+  },
+  {
+      name: "About us",
+      link: "/",
+  },
+  {
+      name: "Features",
+      link: "#",
+  },
+  {
+      name: "Portfolio",
+      link: "#",
+  },
+  {
+      name: "Blog",
+      link: "#",
+  },
+];
+
+
+
+
+
