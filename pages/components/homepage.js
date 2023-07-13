@@ -32,18 +32,18 @@ export default function Homepage() {
         </div>
       </section>
       <Services />
-      {/* <section id="going-down" class="intro pt-80 pb-80">
-        <div class="container">
-          <div class="row center wow fadeInDown">
-            <div class="col-sm-12">
+      {/* <section id="going-down" className="intro pt-80 pb-80">
+        <div className="container">
+          <div className="row center wow fadeInDown">
+            <div className="col-sm-12">
               <h1>
                 Everything you see here is responsive and mobile-friendly
               </h1>
             </div>
-            <div class="col-sm-12 lg-calla-btn pt-40 pb-40">
+            <div className="col-sm-12 lg-calla-btn pt-40 pb-40">
               <a href="#">Explore More</a>
             </div>
-            <div class="col-md-6 col-md-offset-3">
+            <div className="col-md-6 col-md-offset-3">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 nec massa enim. Aliquam viverra at est ullamcorper
@@ -51,8 +51,8 @@ export default function Homepage() {
                 pharetra ut eros.
               </p>
             </div>
-            <div class="col-sm-12 pt-30">
-              <div class="ca ca-signature"></div>
+            <div className="col-sm-12 pt-30">
+              <div className="ca ca-signature"></div>
             </div>
           </div>
         </div>

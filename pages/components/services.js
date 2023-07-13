@@ -4,10 +4,10 @@ import Service_Box from './service-box'
 
 const Services = () => {
     return (
-        <section class=" flex md:flex-row flex-col justify-between">
+        <section className=" flex md:flex-row flex-col justify-between">
             <div className='md:w-1/2 w-full'>
-                <div class="container mx-auto px-4">
-                    <div class="content-holder grid md:grid-cols-2 grid-cols-1 [&>div:nth-child(1)]:md:border-b [&>div:nth-child(1)]:md:border-r [&>div:nth-child(3)]:md:border-t-0 [&>div:nth-child(4)]:md:border-t [&>div:nth-child(4)]:md:border-l [&>div:nth-child(1)]:border-b [&>div:nth-child(1)]:border-r-0 [&>div:nth-child(3)]:border-t [&>div:nth-child(4)]:border-t [&>div:nth-child(4)]:border-l-0 ">
+                <div className="container mx-auto px-4">
+                    <div className="content-holder grid md:grid-cols-2 grid-cols-1 [&>div:nth-child(1)]:md:border-b [&>div:nth-child(1)]:md:border-r [&>div:nth-child(3)]:md:border-t-0 [&>div:nth-child(4)]:md:border-t [&>div:nth-child(4)]:md:border-l [&>div:nth-child(1)]:border-b [&>div:nth-child(1)]:border-r-0 [&>div:nth-child(3)]:border-t [&>div:nth-child(4)]:border-t [&>div:nth-child(4)]:border-l-0 ">
                         <Service_Box
                             img="/images/icons/idea.png"
                             title="UI / UX Strategy"
@@ -39,7 +39,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div class="image-holder md:w-1/2 w-full relative">
+            <div className="image-holder md:w-1/2 w-full relative">
                 <Image src="/images/home/services-1-01.jpg" height={500} width={500} alt="" className='object-cover h-full w-full object-center ' />
             </div>
         </section>

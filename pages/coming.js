@@ -6,23 +6,23 @@ import Header from './components/header';
 export default function Comming() {
   return (
     <>
-      <div class="wrapper page-animate">
+      <div className="wrapper page-animate">
         <Header />
       </div>
-      <section class="under-construction">
+      <section className="under-construction">
         <header>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="menu-wrapper">
-                  <div class="menu-logo logo hi-res">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12">
+                <div className="menu-wrapper">
+                  <div className="menu-logo logo hi-res">
                     <a href="/">
                       <img src="images/hi-res-logo.png" alt="" />
                     </a>
                   </div>
-                  <div class="slide-icons">
-                    <a href="#" class="ca ca-phone-two" target="_blank"></a>
-                    <a href="#" class="ca ca-email" target="_blank"></a>
+                  <div className="slide-icons">
+                    <a href="#" className="ca ca-phone-two" target="_blank"></a>
+                    <a href="#" className="ca ca-email" target="_blank"></a>
                   </div>
                 </div>
               </div>
