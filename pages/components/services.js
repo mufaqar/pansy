@@ -16,21 +16,21 @@ const Services = () => {
                         website."
                         />
                         <Service_Box
-                            img="/images/icons/idea.png"
+                            img="/images/icons/laptop.png"
                             title="Design &amp; Development"
                             content="Impress and boost your sales with our website design
                                     services. Our experts will discuss and create a tailored
                                     website."
                         />
                         <Service_Box
-                            img="/images/icons/idea.png"
+                            img="/images/icons/analytics.png"
                             title="Marketing"
                             content="We deliver content with a kick! Vistors will flock to
                                     your website to view featured blogs, articles and
                                     website."
                         />
                         <Service_Box
-                            img="/images/icons/idea.png"
+                            img="/images/icons/picture.png"
                             title="Photography"
                             content="We deliver content with a kick! Vistors will flock to
                                     your website to view featured blogs, articles and

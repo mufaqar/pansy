@@ -7,7 +7,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className='bg-BgGray py-3'>
+    <header className='bg-BgGray py-3 z-50'>
       <div className="container mx-auto px-4">
         <div className='flex md:gap-12 items-center'>
           <div className="md:w-1/4 w-1/2">
@@ -19,7 +19,7 @@ export default function Header() {
             <button onClick={() => setOpen(!open)} className={`md:hidden block ml-auto`}>
               <AiOutlineMenu className='w-6 h-6' />
             </button>
-            <ul className={`w-full gap-4 items-center justify-end ${open ? 'absolute top-20 flex flex-col gap-6 p-10 left-0 right-0 w-full bg-BgGray' : 'hidden md:flex'}`}>
+            <ul className={`w-full gap-4 items-center justify-end z-50 ${open ? 'absolute top-20 flex flex-col gap-6 p-10 left-0 right-0 w-full bg-BgGray' : 'hidden md:flex'}`}>
               {NavLinks.map((item, idx) => {
                 return <li key={idx} >
                   <Link href={item.link} className="text-base font-medium uppercase text-primary" >
@@ -27,9 +27,9 @@ export default function Header() {
                   </Link>
                 </li>
               })}
-            </ul>
+            </ul> 
           </nav>
-        </div>
+        </div> 
       </div>
     </header>
   );
