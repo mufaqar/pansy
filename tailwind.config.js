@@ -11,6 +11,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        title_clr: '#3e3c36',
+        txt_clr: '#202121',
         primary: '#383837',
         BgGray: '#ededed',
       }

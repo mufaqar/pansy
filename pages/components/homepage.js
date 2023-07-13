@@ -1,12 +1,37 @@
 import React from 'react';
 import Header from './header';
 import SliderComponent from './slider';
+import Link from 'next/link';
+import Image from 'next/image';
+import Signature from '../../public/images/signature.png';
+import Services from './services';
 
 export default function Homepage() {
   return (
     <>
       <Header />
       <SliderComponent />
+      <section className='py-16'>
+        <div className='container mx-auto px-4'>
+          <div className='max-w-[700px] mx-auto'>
+            <p className='text-2xl leading-7 font-normal text-txt_clr text-center'>
+              we are a creative studio focused on web, design Inspiration is the one word we love and we put it into our work everyday.
+            </p>
+            <div className='my-16 text-center'>
+              <Link href="#" className="text-base font-medium uppercase px-7 py-3 border-primary/40 border-y-2">
+                Explore More
+              </Link>
+            </div>
+            <p className='text-lg font-normal text-txt_clr text-center'>
+              All things will be clear and distinct</p>
+            <p className='text-lg font-normal text-txt_clr text-center'>
+              to the man who does not hurry; haste is blind and improvident.
+            </p>
+            <Image src={Signature} alt="signature.png" className='mx-auto mt-16' />
+          </div>
+        </div>
+      </section>
+      <Services />
       {/* <section id="going-down" class="intro pt-80 pb-80">
         <div class="container">
           <div class="row center wow fadeInDown">
@@ -33,69 +58,7 @@ export default function Homepage() {
         </div>
       </section>
 
-      <section class="services-01">
-        <div class="container-fluid">
-          <div class="row full center">
-            <div class="content-holder">
-              <div class="cell-wrapper">
-                <div class="cell pt-20 pb-20">
-                  <a href="#" class="service-box">
-                    <div class="ca ca-ui pb-20 wow zoomIn"></div>
-                    <h3>UI / UX Strategy</h3>
-                    <p>
-                      We deliver content with a kick! Vistors will flock to
-                      your website to view featured blogs, articles and
-                      website.
-                    </p>
-                    <div class="sm-calla-btn pt-20">Read More</div>
-                  </a>
-                </div>
-                <div class="cell pt-20 pb-20">
-                  <a href="#" class="service-box">
-                    <div class="ca ca-development pb-20 wow zoomIn"></div>
-                    <h3>Design &amp; Development</h3>
-                    <p>
-                      Impress and boost your sales with our website design
-                      services. Our experts will discuss and create a tailored
-                      website.
-                    </p>
-                    <div class="sm-calla-btn pt-20">Read More</div>
-                  </a>
-                </div>
-              </div>
-              <div class="cell-wrapper">
-                <div class="cell pt-20 pb-20">
-                  <a href="#" class="service-box">
-                    <div class="ca ca-marketing pb-20 wow zoomIn"></div>
-                    <h3>Marketing</h3>
-                    <p>
-                      We deliver content with a kick! Vistors will flock to
-                      your website to view featured blogs, articles and
-                      website.
-                    </p>
-                    <div class="sm-calla-btn pt-20">Read More</div>
-                  </a>
-                </div>
-                <div class="cell pt-20 pb-20">
-                  <a href="#" class="service-box">
-                    <div class="ca ca-photo pb-20 wow zoomIn"></div>
-                    <h3>Photography</h3>
-                    <p>
-                      We deliver content with a kick! Vistors will flock to
-                      your website to view featured blogs, articles and
-                      website.
-                    </p>
-                    <div class="sm-calla-btn pt-20">Read More</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="image-holder">
-              <img src="/images/home/services-1-01.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </section> */}
+       */}
     </>
   );
 }
