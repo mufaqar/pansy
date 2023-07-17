@@ -27,9 +27,9 @@ export default function Header() {
                   </Link>
                 </li>
               })}
-            </ul> 
+            </ul>
           </nav>
-        </div> 
+        </div>
       </div>
     </header>
   );
@@ -37,24 +37,24 @@ export default function Header() {
 
 export const NavLinks = [
   {
-      name: "Home",
-      link: "/",
+    name: "Home",
+    link: "/",
   },
   {
-      name: "About us",
-      link: "/",
+    name: "About us",
+    link: "/",
   },
   {
-      name: "Features",
-      link: "#",
+    name: "Features",
+    link: "#",
   },
   {
-      name: "Portfolio",
-      link: "#",
+    name: "Portfolio",
+    link: "#",
   },
   {
-      name: "Blog",
-      link: "#",
+    name: "Blog",
+    link: "#",
   },
 ];
 

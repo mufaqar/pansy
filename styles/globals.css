@@ -4,11 +4,11 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
-.main-slider .slick-prev {
+.slick-prev {
     left: 2px;
     z-index: 2;
 }
-.main-slider .slick-next {
+.slick-next {
     right: 2px;
     z-index: 2;
 }
@@ -18,10 +18,10 @@
 }
 
 @media (min-width: 768px){
-    .main-slider .slick-prev {
+    .slick-prev {
         left: 25px;
     }
-    .main-slider .slick-next {
+    .slick-next {
         right: 25px;
     }
 }

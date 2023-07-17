@@ -347,7 +347,7 @@ export default function Footer() {
         </div>
         <div className="container">
           <div className="row wow fadeInUp">
-            <form className="pt-50" id="contact-form" autocomplete="off">
+            <form className="pt-50" id="contact-form" autoComplete="off">
               <div className="col-sm-6 col-md-5 col-md-offset-1">
                 <input
                   type="text"
