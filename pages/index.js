@@ -7,6 +7,7 @@ import Team from './components/team';
 import Why_Choose_Us from './components/why-choose-us';
 import Blog_Section from './components/blog-section';
 import Contact_Section from './components/contact-section';
+import Partners from './components/partners';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Why_Choose_Us />
       <Blog_Section />
       <Contact_Section />
+      <Partners />
       <Footer />
     </main>
   );
