@@ -4,6 +4,9 @@ import Footer from './components/footer';
 import Industries from './components/industries';
 import Testimonial from './components/testimonial';
 import Team from './components/team';
+import Why_Choose_Us from './components/why-choose-us';
+import Blog_Section from './components/blog-section';
+import Contact_Section from './components/contact-section';
 
 export default function Home() {
   return (
@@ -13,6 +16,9 @@ export default function Home() {
       <Industries />
       <Testimonial />
       <Team />
+      <Why_Choose_Us />
+      <Blog_Section />
+      <Contact_Section />
       <Footer />
     </main>
   );

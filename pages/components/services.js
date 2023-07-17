@@ -40,7 +40,7 @@ const Services = () => {
                 </div>
             </div>
             <div className="image-holder md:w-1/2 w-full relative">
-                <Image src="/images/home/services-1-01.jpg" height={500} width={500} alt="" className='object-cover h-full w-full object-center ' />
+                <Image src="/images/home/services-1-01.jpg" height={500} width={500} alt="img" className='object-cover h-full w-full object-center ' />
             </div>
         </section>
     )

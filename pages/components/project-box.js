@@ -4,7 +4,7 @@ import React from 'react'
 const ProjectBox = ({ img }) => {
     return (
         <div className="relative group">
-            <Image src={img} height={500} width={500} alt="" className='w-full object-cover' />
+            <Image src={img} height={500} width={500} alt="img" className='w-full object-cover' />
             <div className="absolute inset-0 bg-white/90 flex justify-center items-center opacity-0 group-hover:opacity-100">
                 <div className='p-4'>
                     <h2 className='text-xl font-medium text-title_clr uppercase text-center mb-5'>Our Recent Projects</h2>

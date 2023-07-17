@@ -32,33 +32,6 @@ export default function Homepage() {
         </div>
       </section>
       <Services />
-      {/* <section id="going-down" className="intro pt-80 pb-80">
-        <div className="container">
-          <div className="row center wow fadeInDown">
-            <div className="col-sm-12">
-              <h1>
-                Everything you see here is responsive and mobile-friendly
-              </h1>
-            </div>
-            <div className="col-sm-12 lg-calla-btn pt-40 pb-40">
-              <a href="#">Explore More</a>
-            </div>
-            <div className="col-md-6 col-md-offset-3">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                nec massa enim. Aliquam viverra at est ullamcorper
-                sollicitudin. Proin a leo sit amet nunc malesuada imperdiet
-                pharetra ut eros.
-              </p>
-            </div>
-            <div className="col-sm-12 pt-30">
-              <div className="ca ca-signature"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-       */}
     </>
   );
 }

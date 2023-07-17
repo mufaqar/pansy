@@ -18,7 +18,7 @@ export default function Portfolio() {
         </div>
         <div className="bg-BgGray">
           <div className="grid md:grid-cols-2 grid-cols-1 items-center">
-            <div className='px-10'>
+            <div className='md:px-10 px-4'>
               <ProjectBox
                 img="/images/home/portfolio/01/1.jpg" />
             </div>
@@ -53,6 +53,7 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
+
       </section>
     </>
   );

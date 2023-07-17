@@ -3,7 +3,7 @@ import React from 'react';
 export default function Footer() {
   return (
     <>
-      <section className="team-members pb-80">
+      {/* <section className="team-members pb-80">
         <div className="container">
           <div className="row center wow fadeDown">
             <div className="ca ca-heading-center">
@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="col-sm-4 xs-pb-30">
               <div className="member">
                 <figure>
-                  <img src="images/team/1.jpg" alt="" />
+                  <img src="images/team/1.jpg" alt="img" />
                   <div className="title-bar">
                     <h3>John Marshall</h3>
                   </div>
@@ -64,7 +64,7 @@ export default function Footer() {
             <div className="col-sm-4 xs-pb-30">
               <div className="member">
                 <figure>
-                  <img src="images/team/2.jpg" alt="" />
+                  <img src="images/team/2.jpg" alt="img" />
                   <div className="title-bar">
                     <h3>Maria Mitchell</h3>
                   </div>
@@ -108,7 +108,7 @@ export default function Footer() {
             <div className="col-sm-4">
               <div className="member">
                 <figure>
-                  <img src="images/team/3.jpg" alt="" />
+                  <img src="images/team/3.jpg" alt="img" />
                   <div className="title-bar">
                     <h3>Michael Cartney</h3>
                   </div>
@@ -248,7 +248,7 @@ export default function Footer() {
             <div className="col-sm-4 xs-pb-30">
               <a href="#" className="blog-roll">
                 <div className="home-blog-thumb">
-                  <img src="images/home/blog/1-01.jpg" alt="" />
+                  <img src="images/home/blog/1-01.jpg" alt="img" />
                 </div>
                 <div className="blog-title">Minimum Usable Design</div>
                 <div className="blog-date-home">
@@ -268,7 +268,7 @@ export default function Footer() {
             <div className="col-sm-4 blog-image-home xs-pb-30">
               <a href="#" className="blog-roll">
                 <div className="home-blog-thumb">
-                  <img src="images/home/blog/2-01.jpg" alt="" />
+                  <img src="images/home/blog/2-01.jpg" alt="img" />
                 </div>
                 <div className="blog-title">You Design It, They do it</div>
                 <div className="blog-date-home">Posted By Admin | 31 October </div>
@@ -286,7 +286,7 @@ export default function Footer() {
             <div className="col-sm-4 blog-image-home">
               <a href="#" className="blog-roll">
                 <div className="home-blog-thumb">
-                  <img src="images/home/blog/3-01.jpg" alt="" />
+                  <img src="images/home/blog/3-01.jpg" alt="img" />
                 </div>
                 <div className="blog-title">A More Readable Web Page</div>
                 <div className="blog-date-home">Posted By Admin | 31 October </div>
@@ -429,28 +429,28 @@ export default function Footer() {
           <div className="row">
             <div className="owl-carousel partner-carousel pt-30">
               <div className="item">
-                <img src="images/home/partners/1.png" alt="" />
+                <img src="images/home/partners/1.png" alt="img" />
               </div>
               <div className="item">
-                <img src="images/home/partners/2.png" alt="" />
+                <img src="images/home/partners/2.png" alt="img" />
               </div>
               <div className="item">
-                <img src="images/home/partners/3.png" alt="" />
+                <img src="images/home/partners/3.png" alt="img" />
               </div>
               <div className="item">
-                <img src="images/home/partners/4.png" alt="" />
+                <img src="images/home/partners/4.png" alt="img" />
               </div>
               <div className="item">
-                <img src="images/home/partners/5.png" alt="" />
+                <img src="images/home/partners/5.png" alt="img" />
               </div>
               <div className="item">
-                <img src="images/home/partners/6.png" alt="" />
+                <img src="images/home/partners/6.png" alt="img" />
               </div>
               <div className="item">
-                <img src="images/home/partners/7.png" alt="" />
+                <img src="images/home/partners/7.png" alt="img" />
               </div>
               <div className="item">
-                <img src="images/home/partners/8.png" alt="" />
+                <img src="images/home/partners/8.png" alt="img" />
               </div>
             </div>
           </div>
@@ -462,7 +462,7 @@ export default function Footer() {
           <div className="row center">
             <div className="col-sm-12 hi-res wow fadeInDown">
               <a href="#">
-                <img src="images/hi-res-logo.png" alt="" />
+                <img src="images/hi-res-logo.png" alt="img" />
               </a>
             </div>
             <div className="col-sm-12 footer-social wow fadeIn">
@@ -510,7 +510,7 @@ export default function Footer() {
             <i className="fa fa-angle-up" aria-hidden="true"></i>
           </a>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 }

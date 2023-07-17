@@ -34,7 +34,7 @@ const Testimonial = () => {
                                     <h4 className='text-xl font-semibold text-txt_clr text-center mt-7'>
                                         {item?.name}
                                     </h4>
-                                    <Image src={item?.img} height={90} width={90} alt="" className='w-20 h-20 rounded-full object-cover object-top mx-auto mt-8' />
+                                    <Image src={item?.img} height={90} width={90} alt="img" className='w-20 h-20 rounded-full object-cover object-top mx-auto mt-8' />
                                 </div>
                             </div>
                         })}

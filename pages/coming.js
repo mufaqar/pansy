@@ -17,7 +17,7 @@ export default function Comming() {
                 <div className="menu-wrapper">
                   <div className="menu-logo logo hi-res">
                     <a href="/">
-                      <img src="images/hi-res-logo.png" alt="" />
+                      <img src="images/hi-res-logo.png" alt="img" />
                     </a>
                   </div>
                   <div className="slide-icons">

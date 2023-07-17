@@ -6,7 +6,7 @@ const Service_Box = ({ img, title, content }) => {
     return (
         <div className="px-4 py-16">
             <div className="">
-                <Image src={img} height={42} width={42} className='mx-auto' />
+                <Image src={img} alt="img" height={42} width={42} className='mx-auto' />
             </div>
             <h3 className='text-xl font-semibold text-title_clr text-center my-5'>
                 {title}

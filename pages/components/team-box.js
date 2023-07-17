@@ -8,7 +8,7 @@ const Team_Box = ({ img, position, content, teamlink, name, designation, fblink,
     return (
         <div className='group'>
             <div className='relative'>
-                <Image src={img} height={250} width={250} alt="" className='w-full object-cover grayscale ' />
+                <Image src={img} height={250} width={250} alt="img" className='w-full object-cover grayscale ' />
                 <div className='bg-white/90 p-5 absolute top-auto bottom-12 left-12 right-12 h-fit group-hover:opacity-100 opacity-0'>
                     <h5 className='text-lg font-medium text-title_clr text-center mb-5'>
                         {position}
