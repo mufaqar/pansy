@@ -4,7 +4,7 @@ import React from 'react'
 const Pricing_Tabels = () => {
     return (
         <section className='py-16'>
-            <div className='container mx-auto px-4 grid md:grid-cols-3 grid-cols-2 gap-7'>
+            <div className='container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-7'>
                 <Table
                     price="19"
                     plan="Basic" />
