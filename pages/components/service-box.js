@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const Service_Box = ({ img, title, content }) => {
+const Service_Box = ({ img, title, content, btn_link }) => {
     return (
         <div className="px-4 py-16">
             <div className="">
@@ -14,6 +14,11 @@ const Service_Box = ({ img, title, content }) => {
             <p className='text-base font-normal text-txt_clr text-center'>
                 {content}
             </p>
+            {btn_link ? (<div className='mt-8 text-center'>
+                <Link href="#" className="text-sm font-medium uppercase px-6 py-2 border-primary/40 border-y-2 bg-transparent hover:bg-primary hover:text-white">
+                    Read More
+                </Link>
+            </div>) : ""}
         </div>
     )
 }

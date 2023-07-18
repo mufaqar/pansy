@@ -42,19 +42,19 @@ export const NavLinks = [
   },
   {
     name: "About us",
-    link: "/",
+    link: "/about",
   },
   {
-    name: "Features",
-    link: "#",
+    name: "Services",
+    link: "/services",
   },
   {
     name: "Portfolio",
-    link: "#",
+    link: "/portfolio",
   },
   {
     name: "Blog",
-    link: "#",
+    link: "#/blog",
   },
 ];
 
