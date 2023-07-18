@@ -21,25 +21,25 @@ const Partners = () => {
                         Custom_class="bg-primary" />
                     <Partner
                         img="/images/icons/2.png"
-                        Custom_class="bg-BgGray" />
+                        Custom_class="bg-BgGray hover:bg-primary" />
                     <Partner
                         img="/images/icons/3.png"
-                        Custom_class="bg-BgGray" />
+                        Custom_class="bg-BgGray hover:bg-primary" />
                     <Partner
                         img="/images/icons/4.png"
-                        Custom_class="bg-BgGray" />
+                        Custom_class="bg-BgGray hover:bg-primary" />
                     <Partner
                         img="/images/icons/5.png"
-                        Custom_class="bg-BgGray" />
+                        Custom_class="bg-BgGray hover:bg-primary" />
                     <Partner
                         img="/images/icons/6.png"
-                        Custom_class="bg-BgGray" />
+                        Custom_class="bg-BgGray hover:bg-primary" />
                     <Partner
                         img="/images/icons/7.png"
-                        Custom_class="bg-BgGray" />
+                        Custom_class="bg-BgGray hover:bg-primary" />
                     <Partner
                         img="/images/icons/8.png"
-                        Custom_class="bg-BgGray" />
+                        Custom_class="bg-BgGray hover:bg-primary" />
                 </div>
             </div>
         </section>

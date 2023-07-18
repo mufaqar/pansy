@@ -19,22 +19,22 @@ const Why_Choose_Us = () => {
                     <Icon_Rounded_Box title="ADVERTISING"
                         img="/images/icons/icon-3.png"
                         content="Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet"
-                        Custom_bg="bg-black mx-auto w-20 h-20 p-4 rounded-full object-contain"
+                        Custom_bg="bg-black"
                     />
                     <Icon_Rounded_Box title="Support"
                         img="/images/icons/icon.png"
                         content="Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet"
-                        Custom_bg="bg-white mx-auto w-20 h-20 p-4 rounded-full object-contain"
+                        Custom_bg="bg-white hover:bg-black"
                     />
                     <Icon_Rounded_Box title="Production"
                         img="/images/icons/icon-1.png"
                         content="Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet"
-                        Custom_bg="bg-white mx-auto w-20 h-20 p-4 rounded-full object-contain"
+                        Custom_bg="bg-white hover:bg-black"
                     />
                     <Icon_Rounded_Box title="Experience"
                         img="/images/icons/icon-2.png"
                         content="Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet"
-                        Custom_bg="bg-white mx-auto w-20 h-20 p-4 rounded-full object-contain"
+                        Custom_bg="bg-white hover:bg-black"
                     />
                 </div>
             </div>

@@ -16,7 +16,7 @@ const Team_Box = ({ img, position, content, teamlink, name, designation, fblink,
                     <p className='text-sm leading-7 font-normal text-txt_clr text-center mb-5'>
                         {content}
                     </p>
-                    <Link href={`${teamlink}`} className='text-3xl text-txt_clr text-center block'>
+                    <Link href={`${teamlink}`} className='text-3xl text-txt_clr hover:text-[#f6a087] text-center block'>
                         <HiOutlineArrowNarrowRight strokeWidth={1} className='w-16 mx-auto' />
                     </Link>
                 </div>
@@ -30,17 +30,17 @@ const Team_Box = ({ img, position, content, teamlink, name, designation, fblink,
                 </p>
                 <ul className='mx-auto flex gap-3 justify-center mt-4'>
                     <li>
-                        <Link href={`${fblink}`} className='text-base font-normal text-txt_clr text-center'>
+                        <Link href={`${fblink}`} className='text-base font-normal text-txt_clr hover:text-[#f6a087] text-center'>
                             <BiLogoFacebook size={20} />
                         </Link>
                     </li>
                     <li>
-                        <Link href={`${twitterlink}`} className='text-base font-normal text-txt_clr text-center'>
+                        <Link href={`${twitterlink}`} className='text-base font-normal text-txt_clr hover:text-[#f6a087] text-center'>
                             <BiLogoTwitter size={20} />
                         </Link>
                     </li>
                     <li>
-                        <Link href={`${linkedinlink}`} className='text-base font-normal text-txt_clr text-center'>
+                        <Link href={`${linkedinlink}`} className='text-base font-normal text-txt_clr hover:text-[#f6a087] text-center'>
                             <BiLogoLinkedin size={20} />
                         </Link>
                     </li>

@@ -4,7 +4,7 @@ import React from 'react'
 const Icon_Rounded_Box = ({ img, title, content, Custom_bg }) => {
     return (
         <div className="px-4 py-10">
-            <Image src={img} alt='img' height={42} width={42} className={` ${Custom_bg}`} />
+            <Image src={img} alt='img' height={42} width={42} className={`mx-auto w-20 h-20 p-4 rounded-full object-contain  ${Custom_bg}`} />
             <h3 className='text-lg font-semibold text-title_clr uppercase text-center my-5'>
                 {title}
             </h3>

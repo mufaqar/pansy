@@ -18,7 +18,7 @@ export default function Homepage() {
               we are a creative studio focused on web, design Inspiration is the one word we love and we put it into our work everyday.
             </p>
             <div className='my-16 text-center'>
-              <Link href="#" className="text-base font-medium uppercase px-7 py-3 border-primary/40 border-y-2">
+              <Link href="#" className="text-base font-medium uppercase px-7 py-3 border-primary/40 border-y-2 bg-transparent hover:bg-primary hover:text-white">
                 Explore More
               </Link>
             </div>

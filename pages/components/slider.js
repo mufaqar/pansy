@@ -40,7 +40,7 @@ export default class SliderComponent extends Component {
                                             {item?.subtitle}
                                         </p>
                                         <div>
-                                            <Link href="#" className="text-base font-medium uppercase px-7 py-3 border-primary border-y-2">
+                                            <Link href="#" className="text-base font-medium uppercase px-7 py-3 border-primary border-y-2 bg-transparent hover:bg-primary hover:text-white">
                                                 {item?.btn_txt}
                                             </Link>
                                         </div>
