@@ -1,48 +1,32 @@
 import Link from "next/link";
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 
-export default class Responsive extends Component {
+export default class SliderComponent extends Component {
+    constructor(props) {
+        super(props);
+        this.next = this.next.bind(this);
+        this.previous = this.previous.bind(this);
+    }
+    next() {
+        this.slider.slickNext();
+    }
+    previous() {
+        this.slider.slickPrev();
+    }
     render() {
-        var settings = {
+        const settings = {
             dots: false,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            initialSlide: 0,
-            nextArrow: <SampleNextArrow />,
-            prevArrow: <SamplePrevArrow />,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        initialSlide: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
+            arrows: false,
         };
         return (
             <section className="main-slider">
-                <Slider {...settings}>
+                <Slider ref={c => (this.slider = c)} {...settings}>
                     {Slide_BG.map((item, idx) => {
                         return (
                             <div className={`${item?.img} bg-center bg-no-repeat bg-cover `} key={idx}>
@@ -53,11 +37,11 @@ export default class Responsive extends Component {
                                             {item?.title}
                                         </h1>
                                         <p className="text-lg font-normal text-title_clr md:mb-16 mb-7">
-
+                                            {item?.subtitle}
                                         </p>
                                         <div>
                                             <Link href="#" className="text-base font-medium uppercase px-7 py-3 border-primary border-y-2">
-                                                {item.btn_txt}
+                                                {item?.btn_txt}
                                             </Link>
                                         </div>
                                     </div>
@@ -66,35 +50,16 @@ export default class Responsive extends Component {
                         );
                     })}
                 </Slider>
+                <button className="absolute top-2/3 md:left-4 left-[3px] transform -translate-y-0 bg-primary text-white w-10 h-10 flex items-center justify-end text-2xl" onClick={this.previous}>
+                    <BsArrowLeft />
+                </button>
+                <button className="absolute top-2/3 md:right-4 right-[3px] transform -translate-y-0 bg-primary text-white w-10 h-10 flex items-center justify-start text-2xl" onClick={this.next}>
+                    <BsArrowRight />
+                </button>
             </section>
         );
     }
 }
-
-
-function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-        <button
-            className={className}
-            style={{ ...style, display: "block", background: "#202121" }}
-            onClick={onClick}
-        ></button>
-    );
-}
-
-function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-        <button
-            className={className}
-            style={{ ...style, display: "block", background: "#202121" }}
-            onClick={onClick}
-        ></button>
-    );
-}
-
-
 
 export const Slide_BG = [
     {
