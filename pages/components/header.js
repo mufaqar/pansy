@@ -22,7 +22,7 @@ export default function Header() {
             <ul className={`w-full gap-4 items-center justify-end z-50 ${open ? 'absolute top-20 flex flex-col gap-6 p-10 left-0 right-0 w-full bg-BgGray' : 'hidden md:flex'}`}>
               {NavLinks.map((item, idx) => {
                 return <li key={idx} >
-                  <Link href={item.link} className="text-base font-medium uppercase text-primary hover:text-[#f6a087]" >
+                  <Link href={item.link} className="text-base font-semibold uppercase text-primary hover:text-[#f6a087]" >
                     {item.name}
                   </Link>
                 </li>
