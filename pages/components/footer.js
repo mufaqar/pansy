@@ -15,32 +15,32 @@ export default function Footer() {
         </div>
         <ul className='flex gap-7 mx-auto w-fit my-10'>
           <li>
-            <Link href="#" className='text-lg font-normal text-txt_clr hover:text-[#f6a087] text-center'>
+            <Link href="#" className='text-lg font-medium text-txt_clr hover:text-[#f6a087] text-center'>
               <BiLogoFacebook size={28} />
             </Link>
           </li>
           <li>
-            <Link href="#" className='text-lg font-normal text-txt_clr hover:text-[#f6a087] text-center'>
+            <Link href="#" className='text-lg font-medium text-txt_clr hover:text-[#f6a087] text-center'>
               <BiLogoTwitter size={28} />
             </Link>
           </li>
           <li>
-            <Link href="#" className='text-lg font-normal text-txt_clr hover:text-[#f6a087] text-center'>
+            <Link href="#" className='text-lg font-medium text-txt_clr hover:text-[#f6a087] text-center'>
               <BiLogoPinterest size={28} />
             </Link>
           </li>
           <li>
-            <Link href="#" className='text-lg font-normal text-txt_clr hover:text-[#f6a087] text-center'>
+            <Link href="#" className='text-lg font-medium text-txt_clr hover:text-[#f6a087] text-center'>
               <LiaGoogle size={28} />
             </Link>
           </li>
           <li>
-            <Link href="#" className='text-lg font-normal text-txt_clr hover:text-[#f6a087] text-center'>
+            <Link href="#" className='text-lg font-medium text-txt_clr hover:text-[#f6a087] text-center'>
               <BiLogoInstagramAlt size={28} />
             </Link>
           </li>
         </ul>
-        <p className='text-sm font-normal text-txt_clr text-center'>
+        <p className='text-sm font-medium text-txt_clr text-center'>
           Pansy© Copyright 2018, All Rights Reserved  xpertdesignerr
         </p>
       </div>

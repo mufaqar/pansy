@@ -11,7 +11,7 @@ export default function Portfolio() {
             <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>Our Recent Projects</h2>
             <div className="w-20 h-[2px] bg-primary mx-auto"></div>
             <div className="w-10 h-[2px] bg-primary mx-auto mt-1"></div>
-            <p className='text-lg font-normal text-txt_clr text-center mt-5'>
+            <p className='text-lg font-medium text-txt_clr text-center mt-5'>
               Our Effective Work Going To Fill a Large Part Of Your Business
             </p>
           </div>

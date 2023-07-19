@@ -18,21 +18,21 @@ export const counts = [
     {
         "label": "Coffee cups",
         "number": "509",
-        "duration": "2"
+        "duration": "1"
     },
     {
         "label": "Projects",
         "number": "75",
-        "duration": "2"
+        "duration": "1"
     },
     {
         "label": "Working Days",
         "number": "250",
-        "duration": "2"
+        "duration": "1"
     },
     {
         "label": "Happy Clients",
         "number": "68",
-        "duration": "2"
+        "duration": "1"
     }
 ]

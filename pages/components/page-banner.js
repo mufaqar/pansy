@@ -9,7 +9,7 @@ const PageBanner = ({ title, content, Custom_bg }) => {
                         {title}
                     </h1>) : ""}
 
-                    {content ? (<p className="text-xl font-normal text-white text-center">
+                    {content ? (<p className="text-xl font-medium text-white text-center">
                         {content}
                     </p>) : ""}
                 </div>

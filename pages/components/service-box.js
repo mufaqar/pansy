@@ -11,7 +11,7 @@ const Service_Box = ({ img, title, content, btn_link }) => {
             <h3 className='text-xl font-semibold text-title_clr text-center my-5'>
                 {title}
             </h3>
-            <p className='text-base font-normal text-txt_clr text-center'>
+            <p className='text-base font-medium text-txt_clr text-center'>
                 {content}
             </p>
             {btn_link ? (<div className='mt-8 text-center'>

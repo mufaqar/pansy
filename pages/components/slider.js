@@ -36,7 +36,7 @@ export default class SliderComponent extends Component {
                                         <h1 className="md:text-5xl text-3xl font-semibold text-title_clr uppercase md:mb-24 mb-7">
                                             {item?.title}
                                         </h1>
-                                        <p className="text-lg font-normal text-title_clr md:mb-16 mb-7">
+                                        <p className="text-lg font-medium text-title_clr md:mb-16 mb-7">
                                             {item?.subtitle}
                                         </p>
                                         <div>

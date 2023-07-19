@@ -11,7 +11,7 @@ const Partners = () => {
                     </h2>
                     <div className="w-20 h-[2px] bg-primary mx-auto"></div>
                     <div className="w-10 h-[2px] bg-primary mx-auto mt-1"></div>
-                    <p className='text-lg font-normal text-txt_clr text-center mt-5'>
+                    <p className='text-lg font-medium text-txt_clr text-center mt-5'>
                         You Can Easily Change the Our Happy Costomer Partners logo Appearance
                     </p>
                 </div>

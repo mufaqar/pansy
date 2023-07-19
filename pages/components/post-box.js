@@ -13,13 +13,13 @@ const Post_Box = ({ img, title, content, author, date }) => {
                     {title}
                 </Link>
                 <p className='text-base font-medium text-txt_clr/80 mt-5'>
-                    <Link href="#" className='text-base font-normal text-txt_clr text-center'>
+                    <Link href="#" className='text-base font-medium text-txt_clr text-center'>
                         {author}
-                    </Link> | <Link href="#" className='text-base font-normal text-txt_clr text-center'>
+                    </Link> | <Link href="#" className='text-base font-medium text-txt_clr text-center'>
                         {date}
                     </Link>
                 </p>
-                <p className='text-base font-normal text-txt_clr/80 my-5'>
+                <p className='text-base font-medium text-txt_clr/80 my-5'>
                     {content}
                 </p>
                 <div className="w-10 h-[2px] bg-primary mt-1"></div>

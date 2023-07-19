@@ -28,7 +28,7 @@ const Testimonial = () => {
                         {Feedback.map((item, idx) => {
                             return <div key={idx}>
                                 <div className='max-w-[600px] mx-auto'>
-                                    <p className='text-lg font-normal text-txt_clr text-center mt-5'>
+                                    <p className='text-lg font-medium text-txt_clr text-center mt-5'>
                                         {item?.content}
                                     </p>
                                     <h4 className='text-xl font-semibold text-txt_clr text-center mt-7'>

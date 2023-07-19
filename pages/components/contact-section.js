@@ -25,26 +25,26 @@ const Contact_Section = () => {
                             <div className='grid md:grid-cols-2 grid-cols-1 gap-7'>
                                 <div className="w-full">
                                     <label htmlFor="name" className="hidden mb-2">Name</label>
-                                    <input className={`px-5 py-4 text-sm font-normal bg-transparent placeholder:text-txt_clr text-txt_clr focus:outline-none w-full border border-primary/20`} placeholder="Name" type="text" id="name" />
+                                    <input className={`px-5 py-4 text-sm font-medium bg-transparent placeholder:text-txt_clr text-txt_clr focus:outline-none w-full border border-primary/20`} placeholder="Name" type="text" id="name" />
                                 </div>
                                 <div className="w-full">
                                     <label htmlFor="email" className="hidden mb-2">Email</label>
-                                    <input className={`px-5 py-4 text-sm font-normal bg-transparent placeholder:text-txt_clr text-txt_clr focus:outline-none w-full border border-primary/20`} placeholder="Email" type="email" id="email" />
+                                    <input className={`px-5 py-4 text-sm font-medium bg-transparent placeholder:text-txt_clr text-txt_clr focus:outline-none w-full border border-primary/20`} placeholder="Email" type="email" id="email" />
                                 </div>
                                 <div className="w-full">
                                     <label htmlFor="phone" className="hidden mb-2">Phone</label>
-                                    <input className={`px-5 py-4 text-sm font-normal bg-transparent placeholder:text-txt_clr text-txt_clr focus:outline-none w-full border border-primary/20`} placeholder="Phone" type="tel" id="phone" />
+                                    <input className={`px-5 py-4 text-sm font-medium bg-transparent placeholder:text-txt_clr text-txt_clr focus:outline-none w-full border border-primary/20`} placeholder="Phone" type="tel" id="phone" />
                                 </div>
                                 <div className="w-full">
                                     <label htmlFor="website" className="hidden mb-2">Website</label>
-                                    <input className={`px-5 py-4 text-sm font-normal bg-transparent placeholder:text-txt_clr text-txt_clr focus:outline-none w-full border border-primary/20`} placeholder="Website" type="text" id="website" />
+                                    <input className={`px-5 py-4 text-sm font-medium bg-transparent placeholder:text-txt_clr text-txt_clr focus:outline-none w-full border border-primary/20`} placeholder="Website" type="text" id="website" />
                                 </div>
                             </div>
                             <div className="w-full my-7">
-                                <textarea id="message" className={`px-5 py-4 text-sm font-normal bg-transparent placeholder:text-txt_clr text-txt_clr focus:outline-none w-full border border-primary/20 h-[126px]`} rows={3} placeholder="Your Need & Description" ></textarea>
+                                <textarea id="message" className={`px-5 py-4 text-sm font-medium bg-transparent placeholder:text-txt_clr text-txt_clr focus:outline-none w-full border border-primary/20 h-[126px]`} rows={3} placeholder="Your Need & Description" ></textarea>
                             </div>
                             <div className='flex justify-center'>
-                                <button type='submit' className="text-base font-normal px-10 py-3 border-primary border bg-txt_clr text-white hover:bg-transparent hover:text-txt_clr">
+                                <button type='submit' className="text-base font-medium px-10 py-3 border-primary border bg-txt_clr text-white hover:bg-transparent hover:text-txt_clr">
                                     Send Message
                                 </button>
                             </div>

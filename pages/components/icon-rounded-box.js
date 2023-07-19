@@ -10,7 +10,7 @@ const Icon_Rounded_Box = ({ img, title, content, Custom_bg }) => {
             </h3>
             <div className="w-10 h-[2px] bg-primary mx-auto"></div>
             <div className="w-5 h-[2px] bg-primary mx-auto mt-1"></div>
-            <p className='text-sm font-normal text-txt_clr text-center my-5'>
+            <p className='text-sm font-medium text-txt_clr text-center my-5'>
                 {content}
             </p>
             <div className="w-10 h-[2px] bg-primary mx-auto"></div>
