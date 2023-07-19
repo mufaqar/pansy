@@ -21,26 +21,26 @@ const Team_Box = ({ img, position, content, teamlink, name, designation, fblink,
                     </Link>
                 </div>
             </div>
-            <div className='py-7'>
-                <h4 className='text-lg font-medium text-title_clr text-center mb-2'>
+            <div className='py-5 bg-primary'>
+                <h4 className='text-lg font-medium text-white text-center mb-1'>
                     {name}
                 </h4>
-                <p className='text-base font-medium text-txt_clr/80 text-center'>
+                <p className='text-base font-medium text-white/80 text-center'>
                     {designation}
                 </p>
-                <ul className='mx-auto flex gap-3 justify-center mt-4'>
+                <ul className='mx-auto flex gap-3 justify-center mt-2'>
                     <li>
-                        <Link href={`${fblink}`} className='text-base font-medium text-txt_clr hover:text-[#f6a087] text-center'>
+                        <Link href={`${fblink}`} className='text-base font-medium text-white hover:text-[#f6a087] text-center'>
                             <BiLogoFacebook size={20} />
                         </Link>
                     </li>
                     <li>
-                        <Link href={`${twitterlink}`} className='text-base font-medium text-txt_clr hover:text-[#f6a087] text-center'>
+                        <Link href={`${twitterlink}`} className='text-base font-medium text-white hover:text-[#f6a087] text-center'>
                             <BiLogoTwitter size={20} />
                         </Link>
                     </li>
                     <li>
-                        <Link href={`${linkedinlink}`} className='text-base font-medium text-txt_clr hover:text-[#f6a087] text-center'>
+                        <Link href={`${linkedinlink}`} className='text-base font-medium text-white hover:text-[#f6a087] text-center'>
                             <BiLogoLinkedin size={20} />
                         </Link>
                     </li>

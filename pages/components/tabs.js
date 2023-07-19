@@ -45,18 +45,16 @@ const Tabs = () => {
                                     return <div key={idx} className={openTab === item.id ? "block" : "hidden"} id="link1">
                                         <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
                                             <div>
-                                            <h2 className='text-8xl font-bold text-title_clr/40'>
+                                                <h2 className='text-8xl font-bold text-title_clr/40'>
                                                     0{item.id}
                                                 </h2>
                                                 <h2 className='text-4xl font-bold text-title_clr mb-5 -mt-5'>
                                                     {item.title2}
                                                 </h2>
-                                                <ul className="grid gap-5">
+                                                <ul className="grid gap-5 list-inside">
                                                     {item.content?.map((_item, _idx) => {
                                                         return <li key={_idx} className='text-base font-bold text-txt_clr/80 list-image-[url(/images/icons/right-arrow.png)]'>
-                                                            <span className="flex items-center gap-1">
-                                                                {_item?.para}
-                                                            </span>
+                                                            {_item?.para}
                                                         </li>
                                                     })}
                                                 </ul>
@@ -82,13 +80,10 @@ export default function TabsRender() {
             <div className="container mx-auto px-4">
                 <div className="mb-12">
                     <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>
-                        BE AWARE OF NEWS
+                        Even More Features
                     </h2>
                     <div className="w-20 h-[2px] bg-primary mx-auto"></div>
                     <div className="w-10 h-[2px] bg-primary mx-auto mt-1"></div>
-                    <p className='text-lg font-medium text-txt_clr text-center mt-5'>
-                        You Can Easily Change the Appearance of Your Blog Post Types with Multi Styles
-                    </p>
                 </div>
                 <Tabs />
             </div>
