@@ -17,14 +17,14 @@ const Tabs = () => {
             <div className="flex flex-wrap">
                 <div className="w-full">
                     <ul
-                        className="flex w-fit mx-auto mb-0 list-none flex-wrap pt-3 pb-4 flex-row gap-8"
+                        className="flex w-fit mx-auto mb-0 list-none flex-wrap pt-3 pb-4 flex-row sm:gap-8 gap-4 justify-center"
                         role="tablist"
                     >
                         {Tabs_Data.map((item, idx) => {
                             return <li key={idx} className="text-center">
                                 <span
                                     className={
-                                        "text-base font-bold uppercase px-7 py-3 " +
+                                        "sm:text-base text-sm font-bold uppercase sm:px-7 px-2 sm:py-3 py-1 " +
                                         (openTab === item.id
                                             ? "border-primary border-y-2 bg-transparent "
                                             : " border-transparent border-y-2 bg-transparent hover:border-primary ")
@@ -53,10 +53,10 @@ const Tabs = () => {
                                                     {item?.category}
                                                 </Link>
                                             </div>
-                                            <Link href="#" className='text-lg font-semibold uppercase text-title_clr text-center mb-2'>
+                                            <Link href="#" className='text-lg font-semibold uppercase text-title_clr text-center mb-5'>
                                                 {item?.title}
                                             </Link>
-                                            <p className='text-base font-medium text-txt_clr/80 my-5'>
+                                            <p className='text-base font-medium text-txt_clr/80 mb-5'>
                                                 {item?.content}
                                             </p>
                                             <div className="mb-5">
@@ -104,26 +104,26 @@ export const Tabs_Data = [
     {
         id: 1,
         category: "Show All",
-        title: "About Discovery",
+        title: "Design you need everyday",
         img: "/images/blog/2-column/1.jpg",
         link: "/simply-sync",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...",
+        content: "Believe it or not, I'm walking on air. I never thought I could feel so free. Flying away on a,",
     },
     {
         id: 2,
         category: "Culture",
-        title: "About Philosophy",
+        title: "Having fun with instagram",
         img: "/images/blog/2-column/2.jpg",
         link: "/simply-simp-agent",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has..."
+        content: "Believe it or not, I'm walking on ai. I never thought I could feel so free. Flying away on a,"
     },
     {
         id: 3,
         category: "Life Style",
-        title: "About Process",
+        title: "New Approach to mobile trends new ui",
         img: "/images/blog/2-column/3.jpg",
         link: "/simply-transport-agent",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has..."
+        content: "Believe it or not, I'm walking on ai. I never thought I could feel so free. Flying away on a,"
     },
     {
         id: 4,
@@ -131,7 +131,7 @@ export const Tabs_Data = [
         title: "About Process",
         img: "/images/blog/2-column/4.jpg",
         link: "/simply-transport-agent",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has..."
+        content: "Believe it or not, I'm walking on ai. I never thought I could feel so free. Flying away on a,"
     },
     {
         id: 5,
@@ -139,7 +139,7 @@ export const Tabs_Data = [
         title: "About Process",
         img: "/images/blog/2-column/5.jpg",
         link: "/simply-transport-agent",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has..."
+        content: "Believe it or not, I'm walking on ai. I never thought I could feel so free. Flying away on a,"
     },
     {
         id: 6,
@@ -147,6 +147,6 @@ export const Tabs_Data = [
         title: "About Process",
         img: "/images/blog/2-column/6.jpg",
         link: "/simply-transport-agent",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has..."
+        content: "Believe it or not, I'm walking on ai. I never thought I could feel so free. Flying away on a,"
     },
 ]
