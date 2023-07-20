@@ -8,6 +8,7 @@ const Count = props => {
     // number to increment to
     // duration of count in seconds
     const { label, number, duration } = props.data
+    //console.log(props.data);
 
     // number displayed by component
     const [count, setCount] = useState("0")
