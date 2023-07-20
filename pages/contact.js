@@ -126,24 +126,28 @@ export default function Contact() {
       <section className='py-16 bg-BgGray'>
         <div className='container mx-auto px-4'>
           <div className='grid md:grid-cols-4 grid-cols-1 gap-7'>
-            <Icon_Rounded_Box title="ADVERTISING"
+            <Icon_Rounded_Box
+              title="Write Email Us"
               img="/images/icons/icon-3.png"
-              content="Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet"
+              content="Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
               Custom_bg="bg-black"
             />
-            <Icon_Rounded_Box title="Support"
+            <Icon_Rounded_Box
+              title="Our Address"
               img="/images/icons/icon.png"
-              content="Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet"
+              content="Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
               Custom_bg="bg-white hover:bg-black"
             />
-            <Icon_Rounded_Box title="Production"
+            <Icon_Rounded_Box
+              title="Call Us"
               img="/images/icons/icon-1.png"
-              content="Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet"
+              content="Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
               Custom_bg="bg-white hover:bg-black"
             />
-            <Icon_Rounded_Box title="Experience"
+            <Icon_Rounded_Box
+              title="Experience"
               img="/images/icons/icon-2.png"
-              content="Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet"
+              content="Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
               Custom_bg="bg-white hover:bg-black"
             />
           </div>
