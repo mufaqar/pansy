@@ -9,7 +9,6 @@ const Count = props => {
     // duration of count in seconds
     const { label, number, duration } = props.data
     //console.log(props.data);
-
     // number displayed by component
     const [count, setCount] = useState("0")
 
@@ -19,11 +18,9 @@ const Count = props => {
         const end = parseInt(number.substring(0, 3))
         // if zero, return
         if (start === end) return;
-
         // find duration per increment
         let totalMilSecDur = parseInt(duration);
         let incrementTime = (totalMilSecDur / end) * 1000;
-
         // timer increments start counter 
         // then updates count
         // ends if start reaches end
@@ -35,7 +32,6 @@ const Count = props => {
 
         // dependency array
     }, [number, duration]);
-
     return (
         <div className="Count">
             <h2 className="md:text-5xl text-3xl font-semibold text-white text-center uppercase mb-7">
