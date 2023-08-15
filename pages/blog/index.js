@@ -1,6 +1,6 @@
 import React from 'react';
-import PageBanner from './components/page-banner';
-import Blog_Tabs from './components/blog-tabs';
+import PageBanner from '../components/page-banner';
+import Blog_Tabs from '../components/blog-tabs';
 
 export default function Blog() {
   return (

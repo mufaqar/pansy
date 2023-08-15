@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Article1 from '../../public/images/about/mission/our-mission-1.jpg';
 import Link from "next/link";
 
 const Tabs = () => {
