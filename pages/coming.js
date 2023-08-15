@@ -1,13 +1,9 @@
-//import Footer from './components/footer';
-
-import Footer from './components/footer';
-import Header from './components/header';
+import React from 'react';
 
 export default function Comming() {
   return (
     <>
       <div className="wrapper page-animate">
-        <Header />
       </div>
       <section className="under-construction">
         <header>
@@ -30,7 +26,6 @@ export default function Comming() {
           </div>
         </header>
       </section>
-      <Footer />
     </>
   );
 }

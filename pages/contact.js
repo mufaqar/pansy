@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from './components/header'
-import Footer from './components/footer'
 import PageBanner from './components/page-banner';
 import Image from 'next/image';
 import Icon_Rounded_Box from './components/icon-rounded-box';
@@ -9,7 +7,6 @@ import Link from 'next/link';
 export default function Contact() {
   return (
     <main>
-      <Header />
       <PageBanner
         title="Contact Now"
         content="We're always open to talk to good people"
@@ -156,7 +153,6 @@ export default function Contact() {
       <section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2961.4530225331205!2d-71.39623962214667!3d42.07634228938861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e46f8fa1bd8709%3A0x98820aa97a0e9d98!2s120%20King%20St%2C%20Franklin%2C%20MA%2002038!5e0!3m2!1sen!2sus!4v1689847514891!5m2!1sen!2sus" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-full h-[450px]'></iframe>
       </section>
-      <Footer />
     </main>
   );
 }

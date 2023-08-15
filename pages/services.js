@@ -1,16 +1,13 @@
 import React from 'react';
-import Header from './components/header';
 import PageBanner from './components/page-banner';
 import Service_Box from './components/service-box';
 import Image from 'next/image';
 import Why_Choose_Us from './components/why-choose-us';
-import Footer from './components/footer';
 import Pricing_Tabels from './components/picing-tabels';
 
 export default function Services() {
   return (
     <main>
-      <Header />
       <PageBanner
         title="Calla Services"
         content="Here are the key services to enhance your business performance"
@@ -103,7 +100,6 @@ export default function Services() {
         </div>
       </section>
       <Pricing_Tabels />
-      <Footer />
     </main>
   );
 }

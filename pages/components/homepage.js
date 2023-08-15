@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './header';
 import SliderComponent from './slider';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -9,7 +8,6 @@ import Services from './services';
 export default function Homepage() {
   return (
     <>
-      <Header />
       <SliderComponent />
       <section className='py-16'>
         <div className='container mx-auto px-4'>
