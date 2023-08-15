@@ -103,7 +103,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <Counter_Section />
+      {/* <Counter_Section /> */}
       <Pricing_Tabels />
       <Footer />
     </main>
