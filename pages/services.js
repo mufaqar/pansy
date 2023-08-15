@@ -5,7 +5,6 @@ import Service_Box from './components/service-box';
 import Image from 'next/image';
 import Why_Choose_Us from './components/why-choose-us';
 import Footer from './components/footer';
-import Counter_Section from './components/counter-section';
 import Pricing_Tabels from './components/picing-tabels';
 
 export default function Services() {
@@ -103,7 +102,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-      {/* <Counter_Section /> */}
       <Pricing_Tabels />
       <Footer />
     </main>
