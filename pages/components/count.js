@@ -3,14 +3,20 @@ import React, { useEffect, useState } from 'react';
 // //styling
 // import './Count.css';
 
-const Count = props => {
+const Count = (props) => {
     // label of counter
     // number to increment to
     // duration of count in seconds
-    const { label, number, duration } = props.data
+    //const { label, number, duration } = props.data;
     //console.log(props.data);
     // number displayed by component
-    const [count, setCount] = useState("0")
+    //const [count, setCount] = useState("0")
+
+     // Destructure props safely with default values
+     const { label = '', number = '', duration = '' } = props.data || {};
+
+     // State to store the current count
+     const [count, setCount] = useState("0");
 
     useEffect(() => {
         let start = 0;
