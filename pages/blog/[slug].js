@@ -18,7 +18,7 @@ function Single() {
 
             <section className='py-16'>
                 <div className='container mx-auto px-4 flex md:flex-row flex-col gap-7'>
-                    <div className='md:w-2/3 w-full'>
+                    <div className='md:w-3/4 w-full'>
                         <div>
                             <Image src="/images/blog/2-column/1.jpg" alt='feature-img' width={550} height={200} className='w-full' />
                         </div>
@@ -111,7 +111,7 @@ function Single() {
                             </div>
                         </div>
                     </div>
-                    <div className='md:w-1/3 w-full'>
+                    <div className='md:w-1/4 w-full'>
                         <SideBar />
                     </div>
                 </div>
