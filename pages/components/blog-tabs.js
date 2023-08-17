@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
-const Tabs = () => {
+const Tabs = ({ anim }) => {
     const [openTab, setOpenTab] = React.useState(1);
     const handleFaq = (id) => {
         if (openTab === id) {
@@ -43,7 +45,12 @@ const Tabs = () => {
                             {Tabs_Data.map((item, idx) => {
                                 return <div key={idx} className={`tab-content grid md:grid-cols-3 grid-cols-1 gap-7 ${openTab === item.id ? "block" : "hidden"}`}>
                                     {item?.post?.map((post, _idx) => {
-                                        return <div key={_idx}>
+                                        return <div key={_idx}
+                                            style={{
+                                                transform: anim ? "none" : "scale(0.5)",
+                                                opacity: anim ? 1 : 0,
+                                                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                                            }}>
                                             <div>
                                                 <Image src={post?.img} height={250} width={250} alt="img" className='w-full object-cover ' />
                                             </div>
@@ -84,17 +91,25 @@ const Tabs = () => {
 };
 
 export default function Blog_Tabs() {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
-        <section className="py-20">
+        <section className="py-20" ref={ref}>
             <div className="container mx-auto px-4">
-                <div className="mb-12">
+                <div className="mb-12"
+                    style={{
+                        transform: isInView ? "none" : "translateX(-200px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}>
                     <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>
                         Even More Features
                     </h2>
                     <div className="w-20 h-[2px] bg-primary mx-auto"></div>
                     <div className="w-10 h-[2px] bg-primary mx-auto mt-1"></div>
                 </div>
-                <Tabs />
+                <Tabs anim={isInView} />
             </div>
         </section>
     );

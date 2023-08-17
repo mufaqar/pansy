@@ -3,19 +3,29 @@ import PageBanner from './components/page-banner';
 import Image from 'next/image';
 import Icon_Rounded_Box from './components/icon-rounded-box';
 import Link from 'next/link';
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
 
 export default function Contact() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <main>
       <PageBanner
         title="Contact Now"
         content="We're always open to talk to good people"
         Custom_bg="bg-[url(/images/backgrounds/1.jpg)]" />
-      <section className=''>
+      <section className='' ref={ref}>
         <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 items-center'>
           <div className='px-4 md:py-16 py-10'>
             <div>
-              <div className="mb-6">
+              <div className="mb-6" style={{
+                transform: isInView ? "none" : "translateX(-200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+              }}>
                 <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>
                   Let's Srart Talk
                 </h2>
@@ -25,7 +35,11 @@ export default function Contact() {
                   Discuss your dream projects with us. Drop us a line below.
                 </p>
               </div>
-              <form>
+              <form style={{
+                        transform: isInView ? "none" : "scale(0.5)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}>
                 <div className='grid md:grid-cols-2 grid-cols-1 gap-7'>
                   <div className="w-full">
                     <label htmlFor="name" className="hidden mb-2">Name</label>
@@ -57,7 +71,12 @@ export default function Contact() {
           </div>
           <div className='px-4 md:py-16 py-10'>
             <div className='grid md:grid-cols-2 grid-cols-1'>
-              <div className="px-4 py-8">
+              <div className="px-4 py-8"
+              style={{
+                        transform: isInView ? "none" : "scale(0.5)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}>
                 <div className="">
                   <Image src="/images/icons/idea.png" alt="img" height={42} width={42} className='h-10 w-10 object-fill mx-auto' />
                 </div>
@@ -74,7 +93,12 @@ export default function Contact() {
                   </li>
                 </ul>
               </div>
-              <div className="px-4 py-8">
+              <div className="px-4 py-8"
+              style={{
+                        transform: isInView ? "none" : "scale(0.5)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}>
                 <div className="">
                   <Image src="/images/icons/laptop.png" alt="img" height={42} width={42} className='h-10 w-10 object-fill mx-auto' />
                 </div>
@@ -82,7 +106,12 @@ export default function Contact() {
                   120 King Street Lorem Ipsum Dummy Area United States
                 </Link>
               </div>
-              <div className="px-4 py-8">
+              <div className="px-4 py-8"
+              style={{
+                        transform: isInView ? "none" : "scale(0.5)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}>
                 <div className="">
                   <Image src="/images/icons/analytics.png" alt="img" height={42} width={42} className='h-10 w-10 object-fill mx-auto' />
                 </div>
@@ -99,7 +128,12 @@ export default function Contact() {
                   </li>
                 </ul>
               </div>
-              <div className="px-4 py-8">
+              <div className="px-4 py-8"
+              style={{
+                        transform: isInView ? "none" : "scale(0.5)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}>
                 <div className="">
                   <Image src="/images/icons/picture.png" alt="img" height={42} width={42} className='h-10 w-10 object-fill mx-auto' />
                 </div>
