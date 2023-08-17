@@ -22,7 +22,7 @@ const Tabs = ({anim}) => {
                         role="tablist"
                     >
                         {Tabs_Data.map((item, idx) => {
-                            return <li key={idx} className="text-center">
+                            return <li key={idx} className="text-center cursor-pointer">
                                 <span
                                     className={
                                         "text-base font-bold uppercase px-7 py-3 " +
