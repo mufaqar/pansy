@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import Article1 from '../../public/images/about/mission/our-mission-1.jpg';
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
-const Tabs = () => {
+const Tabs = ({anim}) => {
     const [openTab, setOpenTab] = React.useState(1);
     const handleFaq = (id) => {
         if (openTab === id) {
@@ -44,7 +46,11 @@ const Tabs = () => {
                                 {Tabs_Data.map((item, idx) => {
                                     return <div key={idx} className={openTab === item.id ? "block" : "hidden"} id="link1">
                                         <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
-                                            <div>
+                                            <div style={{
+                                                transform: anim ? "none" : "translateX(-200px)",
+                                                opacity: anim ? 1 : 0,
+                                                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                                            }}>
                                                 <h2 className='text-8xl font-bold text-title_clr/40'>
                                                     0{item.id}
                                                 </h2>
@@ -59,7 +65,11 @@ const Tabs = () => {
                                                     })}
                                                 </ul>
                                             </div>
-                                            <div>
+                                            <div style={{
+                                                transform: anim ? "none" : "translateX(200px)",
+                                                opacity: anim ? 1 : 0,
+                                                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                                            }}>
                                                 <Image src={item.img} alt="img" />
                                             </div>
                                         </div>
@@ -75,17 +85,25 @@ const Tabs = () => {
 };
 
 export default function TabsRender() {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
-        <section className="py-20">
+        <section className="py-20" ref={ref}>
             <div className="container mx-auto px-4">
-                <div className="mb-12">
+                <div className="mb-12"
+                    style={{
+                        transform: isInView ? "none" : "translateX(-200px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}>
                     <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>
                         Even More Features
                     </h2>
                     <div className="w-20 h-[2px] bg-primary mx-auto"></div>
                     <div className="w-10 h-[2px] bg-primary mx-auto mt-1"></div>
                 </div>
-                <Tabs />
+                <Tabs anim={isInView} />
             </div>
         </section>
     );

@@ -8,12 +8,8 @@ import Why_Choose_Us from './components/why-choose-us';
 import Blog_Section from './components/blog-section';
 import Contact_Section from './components/contact-section';
 import Partners from './components/partners';
-import { useRef } from "react";
-import { useInView } from "framer-motion";
 
 export default function Home() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   return (
     <main className='overflow-hidden'>

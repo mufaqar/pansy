@@ -1,11 +1,21 @@
 import Link from 'next/link'
 import React from 'react'
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 const Pricing_Tabels = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
-        <section className='py-16'>
+        <section className='py-16' ref={ref}>
             <div className='container mx-auto px-4'>
-                <div className="mb-12">
+                <div className="mb-12"
+                style={{
+                    transform: isInView ? "none" : "translateX(-200px)",
+                    opacity: isInView ? 1 : 0,
+                    transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                }}>
                     <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>
                         Some Of Our Services
                     </h2>
@@ -19,7 +29,8 @@ const Pricing_Tabels = () => {
                     {Table_Data.map((item, idx) => {
                         return <Table
                             key={idx}
-                            data={item} />
+                            data={item}
+                            anim={isInView} />
                     })}
                 </div>
             </div>
@@ -29,9 +40,14 @@ const Pricing_Tabels = () => {
 
 export default Pricing_Tabels
 
-function Table({ data }) {
+function Table({ data, anim }) {
     return (
-        <div className={`border-2 divide-y-2 ${data?.standared ? "bg-BgGray/75" : ""}`}>
+        <div className={`border-2 divide-y-2 ${data?.standared ? "bg-BgGray/75" : ""}`}
+        style={{
+            transform: anim ? "none" : "scale(0.5)",
+            opacity: anim ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}>
             <div className='py-7'>
                 <h2 className="md:text-5xl text-3xl font-medium text-title_clr text-center">
                     <sup>$</sup>{data?.price}<sub>/month</sub>
