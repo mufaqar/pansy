@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 //import { NavLinks } from '../const/navlinks';
 import { AiOutlineMenu } from 'react-icons/ai'
+import { GrClose } from 'react-icons/gr'
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -17,7 +18,11 @@ export default function Header() {
           </div>
           <nav className='md:w-3/4 w-1/2'>
             <button onClick={() => setOpen(!open)} className={`md:hidden block ml-auto`}>
-              <AiOutlineMenu className='w-6 h-6' />
+              {
+                open === true ?
+                  (<GrClose className='w-6 h-6' />) :
+                  (<AiOutlineMenu className='w-6 h-6' />)
+              }
             </button>
             <ul className={`w-full gap-4 items-center justify-end z-50 ${open ? 'absolute top-20 flex flex-col gap-6 p-10 left-0 right-0 w-full bg-BgGray' : 'hidden md:flex'}`}>
               {NavLinks.map((item, idx) => {
