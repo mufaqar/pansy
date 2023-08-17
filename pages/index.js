@@ -17,15 +17,15 @@ export default function Home() {
 
   return (
     <main className='overflow-hidden'>
-      <Homepage anim={isInView} view={ref} />
-      <Portfolio anim={isInView} view={ref} />
-      <Industries anim={isInView} view={ref} />
-      <Testimonial anim={isInView} view={ref} />
-      <Team anim={isInView} view={ref} />
-      <Why_Choose_Us anim={isInView} view={ref} />
-      <Blog_Section anim={isInView} view={ref} />
-      <Contact_Section anim={isInView} view={ref} />
-      <Partners anim={isInView} view={ref} />
+      <Homepage />
+      <Portfolio />
+      <Industries />
+      <Testimonial />
+      <Team />
+      <Why_Choose_Us />
+      <Blog_Section />
+      <Contact_Section />
+      <Partners />
     </main>
   );
 }

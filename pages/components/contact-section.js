@@ -1,9 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
-const Contact_Section = ({ anim, view }) => {
+const Contact_Section = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
-        <section className='' ref={view}>
+        <section className='' ref={ref}>
             <div className='grid md:grid-cols-2 grid-cols-1'>
                 <div>
                     <Image src="/images/home/portfolio/01/5.jpg" height={500} width={500} alt="img" className='w-full h-full object-cover' />
@@ -12,13 +17,13 @@ const Contact_Section = ({ anim, view }) => {
                     <div>
                         <Image src="/images/icons/cofee.png" alt='img' height={42} width={42} className={`mx-auto w-16 h-16 object-contain`}
                             style={{
-                                transform: anim ? "none" : "scale(0.5)",
-                                opacity: anim ? 1 : 0,
+                                transform: isInView ? "none" : "scale(0.5)",
+                                opacity: isInView ? 1 : 0,
                                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                             }} />
                         <div className="my-6" style={{
-                            transform: anim ? "none" : "translateX(-200px)",
-                            opacity: anim ? 1 : 0,
+                            transform: isInView ? "none" : "translateX(-200px)",
+                            opacity: isInView ? 1 : 0,
                             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                         }}>
                             <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>
@@ -31,8 +36,8 @@ const Contact_Section = ({ anim, view }) => {
                             </p>
                         </div>
                         <form style={{
-                            transform: anim ? "none" : "scale(0.5)",
-                            opacity: anim ? 1 : 0,
+                            transform: isInView ? "none" : "scale(0.5)",
+                            opacity: isInView ? 1 : 0,
                             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                         }}>
                             <div className='grid md:grid-cols-2 grid-cols-1 gap-7'>

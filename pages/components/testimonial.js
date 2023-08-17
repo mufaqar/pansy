@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 import Slider from "react-slick";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
-const Testimonial = ({anim, view}) => {
+const Testimonial = () => {
     var settings = {
         dots: false,
         arrows: false,
@@ -13,15 +15,17 @@ const Testimonial = ({anim, view}) => {
         slidesToScroll: 1,
         initialSlide: 0,
     };
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
     return (
-        <section className='py-16 bg-[url("/images/backgrounds/testim-bg.png")] bg-center bg-no-repeat bg-cover' ref={view}>
+        <section className='py-16 bg-[url("/images/backgrounds/testim-bg.png")] bg-center bg-no-repeat bg-cover' ref={ref}>
             <div className='container mx-auto px-4'>
-                <div className="mb-10" 
-                style={{
-                    transform: anim ? "none" : "translateX(200px)",
-                    opacity: anim ? 1 : 0,
-                    transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-                }}>
+                <div className="mb-10"
+                    style={{
+                        transform: isInView ? "none" : "translateX(200px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}>
                     <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>
                         What Poeple Says About Calla
                     </h2>
@@ -39,7 +43,12 @@ const Testimonial = ({anim, view}) => {
                                     <h4 className='text-xl font-semibold text-txt_clr text-center mt-7'>
                                         {item?.name}
                                     </h4>
-                                    <Image src={item?.img} height={90} width={90} alt="img" className='w-20 h-20 rounded-full object-cover object-top mx-auto mt-8' />
+                                    <Image src={item?.img} height={90} width={90} alt="img" className='w-20 h-20 rounded-full object-cover object-top mx-auto mt-8'
+                                        style={{
+                                            transform: isInView ? "none" : "scale(0.5)",
+                                            opacity: isInView ? 1 : 0,
+                                            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                                        }} />
                                 </div>
                             </div>
                         })}

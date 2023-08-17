@@ -3,12 +3,17 @@ import Link from 'next/link'
 import React from 'react'
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { BiLogoFacebook, BiLogoTwitter, BiLogoLinkedin } from 'react-icons/bi'
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
-const Team_Box = ({ img, position, content, teamlink, name, designation, fblink, twitterlink, linkedinlink, anim }) => {
+const Team_Box = ({ img, position, content, teamlink, name, designation, fblink, twitterlink, linkedinlink }) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
-        <div className='group' style={{
-            transform: anim ? "none" : "scale(0)",
-            opacity: anim ? 1 : 0,
+        <div className='group' ref={ref} style={{
+            transform: isInView ? "none" : "scale(0)",
+            opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
         }}>
             <div className='relative'>

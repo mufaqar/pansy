@@ -1,17 +1,20 @@
 import Image from 'next/image';
 import React from 'react';
 import ProjectBox from './project-box';
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
-
-export default function Portfolio({anim, view}) {
+export default function Portfolio() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   return (
     <>
-      <section className="portfolio" ref={view}>
+      <section className="portfolio" ref={ref}>
         <div className="container mx-auto px-4 py-16">
           <div className="" style={{
-            transform: anim ? "none" : "translateX(-200px)",
-            opacity: anim ? 1 : 0,
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
           }}>
             <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>Our Recent Projects</h2>
@@ -25,16 +28,16 @@ export default function Portfolio({anim, view}) {
         <div className="bg-BgGray">
           <div className="grid md:grid-cols-2 grid-cols-1 items-center">
             <div className='md:px-10 px-4' style={{
-              transform: anim ? "none" : "translateX(200px)",
-              opacity: anim ? 1 : 0,
+              transform: isInView ? "none" : "translateX(200px)",
+              opacity: isInView ? 1 : 0,
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
             }}>
               <ProjectBox
                 img="/images/home/portfolio/01/1.jpg" />
             </div>
             <div className='' style={{
-              transform: anim ? "none" : "translateX(-200px)",
-              opacity: anim ? 1 : 0,
+              transform: isInView ? "none" : "translateX(-200px)",
+              opacity: isInView ? 1 : 0,
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
             }}>
               <ProjectBox
@@ -51,8 +54,8 @@ export default function Portfolio({anim, view}) {
         <div className="bg-BgGray">
           <div className="grid md:grid-cols-2 grid-cols-1 items-center">
             <div className='' style={{
-              transform: anim ? "none" : "translateX(200px)",
-              opacity: anim ? 1 : 0,
+              transform: isInView ? "none" : "translateX(200px)",
+              opacity: isInView ? 1 : 0,
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
             }}>
               <ProjectBox
@@ -65,8 +68,8 @@ export default function Portfolio({anim, view}) {
               </div>
             </div>
             <div className='px-10' style={{
-              transform: anim ? "none" : "translateX(-200px)",
-              opacity: anim ? 1 : 0,
+              transform: isInView ? "none" : "translateX(-200px)",
+              opacity: isInView ? 1 : 0,
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
             }}>
               <ProjectBox
