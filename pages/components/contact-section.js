@@ -1,17 +1,26 @@
 import Image from 'next/image'
 import React from 'react'
 
-const Contact_Section = () => {
+const Contact_Section = ({ anim, view }) => {
     return (
-        <section className=''>
+        <section className='' ref={view}>
             <div className='grid md:grid-cols-2 grid-cols-1'>
                 <div>
                     <Image src="/images/home/portfolio/01/5.jpg" height={500} width={500} alt="img" className='w-full h-full object-cover' />
                 </div>
                 <div className='md:px-10 px-4 md:py-16 py-10'>
                     <div>
-                        <Image src="/images/icons/cofee.png" alt='img' height={42} width={42} className={`mx-auto w-16 h-16 object-contain`} />
-                        <div className="my-6">
+                        <Image src="/images/icons/cofee.png" alt='img' height={42} width={42} className={`mx-auto w-16 h-16 object-contain`}
+                            style={{
+                                transform: anim ? "none" : "scale(0.5)",
+                                opacity: anim ? 1 : 0,
+                                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                            }} />
+                        <div className="my-6" style={{
+                            transform: anim ? "none" : "translateX(-200px)",
+                            opacity: anim ? 1 : 0,
+                            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                        }}>
                             <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>
                                 Let's Srart Talk
                             </h2>
@@ -21,7 +30,11 @@ const Contact_Section = () => {
                                 Discuss your dream projects with us. Drop us a line below.
                             </p>
                         </div>
-                        <form>
+                        <form style={{
+                            transform: anim ? "none" : "scale(0.5)",
+                            opacity: anim ? 1 : 0,
+                            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                        }}>
                             <div className='grid md:grid-cols-2 grid-cols-1 gap-7'>
                                 <div className="w-full">
                                     <label htmlFor="name" className="hidden mb-2">Name</label>

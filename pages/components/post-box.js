@@ -2,9 +2,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const Post_Box = ({ img, title, content, author, date }) => {
+const Post_Box = ({ img, title, content, author, date, anim }) => {
     return (
-        <div>
+        <div style={{
+            transform: anim ? "none" : "scale(0.5)",
+            opacity: anim ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}>
             <div>
                 <Image src={img} height={250} width={250} alt="img" className='w-full object-cover ' />
             </div>

@@ -4,9 +4,13 @@ import React from 'react'
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { BiLogoFacebook, BiLogoTwitter, BiLogoLinkedin } from 'react-icons/bi'
 
-const Team_Box = ({ img, position, content, teamlink, name, designation, fblink, twitterlink, linkedinlink }) => {
+const Team_Box = ({ img, position, content, teamlink, name, designation, fblink, twitterlink, linkedinlink, anim }) => {
     return (
-        <div className='group'>
+        <div className='group' style={{
+            transform: anim ? "none" : "scale(0)",
+            opacity: anim ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}>
             <div className='relative'>
                 <Image src={img} height={250} width={250} alt="img" className='w-full object-cover grayscale ' />
                 <div className='bg-white/90 p-5 absolute top-auto bottom-12 left-12 right-12 h-fit group-hover:opacity-100 opacity-0'>

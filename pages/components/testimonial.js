@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Slider from "react-slick";
 
-const Testimonial = () => {
+const Testimonial = ({anim, view}) => {
     var settings = {
         dots: false,
         arrows: false,
@@ -14,9 +14,14 @@ const Testimonial = () => {
         initialSlide: 0,
     };
     return (
-        <section className='py-16 bg-[url("/images/backgrounds/testim-bg.png")] bg-center bg-no-repeat bg-cover'>
+        <section className='py-16 bg-[url("/images/backgrounds/testim-bg.png")] bg-center bg-no-repeat bg-cover' ref={view}>
             <div className='container mx-auto px-4'>
-                <div className="mb-10">
+                <div className="mb-10" 
+                style={{
+                    transform: anim ? "none" : "translateX(200px)",
+                    opacity: anim ? 1 : 0,
+                    transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                }}>
                     <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>
                         What Poeple Says About Calla
                     </h2>

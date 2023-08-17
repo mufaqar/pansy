@@ -1,11 +1,15 @@
 import React from 'react'
 import Partner from './partner-box'
 
-const Partners = () => {
+const Partners = ({ anim, view }) => {
     return (
-        <section className='py-16'>
+        <section className='py-16' ref={view}>
             <div className='container mx-auto px-4'>
-                <div className="mb-10">
+                <div className="mb-10" style={{
+                    transform: anim ? "none" : "translateX(-200px)",
+                    opacity: anim ? 1 : 0,
+                    transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                }}>
                     <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>
                         Our Partners
                     </h2>
@@ -18,28 +22,44 @@ const Partners = () => {
                 <div className='grid md:grid-cols-4 grid-cols-1 gap-7'>
                     <Partner
                         img="/images/icons/1.png"
-                        Custom_class="bg-primary" />
+                        Custom_class="bg-primary" 
+                        anim={anim}
+                        />
                     <Partner
                         img="/images/icons/2.png"
-                        Custom_class="bg-BgGray hover:bg-primary" />
+                        Custom_class="bg-BgGray hover:bg-primary" 
+                        anim={anim}
+                        />
                     <Partner
                         img="/images/icons/3.png"
-                        Custom_class="bg-BgGray hover:bg-primary" />
+                        Custom_class="bg-BgGray hover:bg-primary" 
+                        anim={anim}
+                        />
                     <Partner
                         img="/images/icons/4.png"
-                        Custom_class="bg-BgGray hover:bg-primary" />
+                        Custom_class="bg-BgGray hover:bg-primary" 
+                        anim={anim}
+                        />
                     <Partner
                         img="/images/icons/5.png"
-                        Custom_class="bg-BgGray hover:bg-primary" />
+                        Custom_class="bg-BgGray hover:bg-primary" 
+                        anim={anim}
+                        />
                     <Partner
                         img="/images/icons/6.png"
-                        Custom_class="bg-BgGray hover:bg-primary" />
+                        Custom_class="bg-BgGray hover:bg-primary" 
+                        anim={anim}
+                        />
                     <Partner
                         img="/images/icons/7.png"
-                        Custom_class="bg-BgGray hover:bg-primary" />
+                        Custom_class="bg-BgGray hover:bg-primary" 
+                        anim={anim}
+                        />
                     <Partner
                         img="/images/icons/8.png"
-                        Custom_class="bg-BgGray hover:bg-primary" />
+                        Custom_class="bg-BgGray hover:bg-primary" 
+                        anim={anim}
+                        />
                 </div>
             </div>
         </section>

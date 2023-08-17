@@ -1,11 +1,15 @@
 import React from 'react'
 import Post_Box from './post-box'
 
-const Blog_Section = () => {
+const Blog_Section = ({ anim, view }) => {
     return (
-        <section className='py-16'>
+        <section className='py-16' ref={view}>
             <div className='container mx-auto px-4'>
-                <div className="mb-12">
+                <div className="mb-12" style={{
+                    transform: anim ? "none" : "translateX(-200px)",
+                    opacity: anim ? 1 : 0,
+                    transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                }}>
                     <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>
                         BE AWARE OF NEWS
                     </h2>
@@ -22,6 +26,7 @@ const Blog_Section = () => {
                         author="POSTED BY ADMIN"
                         date="31 OCTOBER 2015"
                         content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has..."
+                        anim={anim}
                     />
                     <Post_Box
                         img="/images/blog/2-column/2.jpg"
@@ -29,6 +34,7 @@ const Blog_Section = () => {
                         author="POSTED BY ADMIN"
                         date="31 OCTOBER 2015"
                         content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has..."
+                        anim={anim}
                     />
                     <Post_Box
                         img="/images/blog/2-column/3.jpg"
@@ -36,6 +42,7 @@ const Blog_Section = () => {
                         author="POSTED BY ADMIN"
                         date="31 OCTOBER 2015"
                         content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has..."
+                        anim={anim}
                     />
                 </div>
             </div>

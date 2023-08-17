@@ -1,9 +1,9 @@
 import React from 'react'
 import Team_Box from './team-box'
 
-const Team = () => {
+const Team = ({ anim, view }) => {
     return (
-        <section className='py-16'>
+        <section className='py-16' ref={view}>
             <div className='container mx-auto px-4'>
                 <div className="mb-12">
                     <h2 className='text-2xl font-medium text-title_clr uppercase text-center mb-5'>
@@ -28,6 +28,7 @@ const Team = () => {
                                 fblink={item?.fblink}
                                 twitter={item?.twitter}
                                 linkedinlink={item?.linkedinlink}
+                                anim={anim}
                             />
                         );
                     })}
